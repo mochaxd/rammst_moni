@@ -1,0 +1,135 @@
+/* Aplicar la fuente Metal Mania a todo el cuerpo */
+body {
+    font-family: 'Metal Mania', cursive;
+    background-color: #1b1b1b;
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+h1, h2 {
+    font-family: 'Metal Mania', cursive;
+    color: #675b5b;
+}
+header {
+    background-color: #000000;
+    text-align: center;
+    padding: 20px;
+    position: relative; /* Permite posicionar el logo dentro del header */
+}
+header img {
+    position: absolute;
+    top: 10px; /* Ajusta el espacio desde la parte superior */
+    left: 10px; /* Ajusta el espacio desde la parte izquierda */
+    width: 50px; /* Tamaño del logo */
+    height: auto; /* Mantiene la proporción del logo */
+}
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+nav ul li {
+    margin: 0 15px;
+}
+nav ul li a {
+    text-decoration: none;
+    color: white;
+}
+nav ul li a:hover {
+    color: #FFD700; /* Cambia el color al pasar el mouse */
+}
+.bio-section {
+    padding: 20px;
+    background-color: #2b2b2b;
+    margin: 20px;
+    border-radius: 10px;
+}
+footer {
+    background-color: #675b5b;
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
+}
+.social-links a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: white;
+}
+.social-links a:hover {
+    color: #FFD700;
+}
+.integrantes-section {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-height: 500px; /* Ajusta la altura máxima */
+    overflow-y: auto;  /* Agrega scroll si excede el espacio */
+}
+.integrantes-section button {
+    font-family: 'Metal Mania', cursive;
+    background-color: #000000;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.integrantes-section button:hover {
+    background-color: #444;
+}
+.info-integrante {
+    display: none;
+    margin-top: 10px;
+    background-color: #1e1e1e;
+    padding: 10px;
+    border-radius: 5px;
+}
+.info-integrante img {
+    width: 150px;
+    height: auto;
+    margin-right: 10px;
+    transition: transform 0.5s ease, box-shadow 0.5s ease; /* Animación de transformación */
+    cursor: pointer;
+    vertical-align: top;
+}
+.info-integrante img:hover {
+    transform: scale(1.1); /* Aumenta el tamaño de la imagen al pasar el mouse */
+    box-shadow: 0 0 20px #ffffff, 0 0 30px #FFD700, 0 0 40px #FF6347; /* Sombra metálica brillante */
+}
+.info-integrante img:active {
+    transform: scale(1.15); /* Aumenta aún más al hacer clic */
+    box-shadow: 0 0 40px #ffffff, 0 0 50px #FFD700, 0 0 60px #FF6347;
+    border: 2px solid #ce0808; /* Borde rojo */
+}
+.info-integrante p {
+    display: inline-block;
+    vertical-align: top;
+    width: calc(100% - 170px);
+    margin: 0;
+}
+.album-section {
+    padding: 20px;
+    background-color: #2b2b2b;
+    margin: 20px;
+    border-radius: 10px;
+}
+.album-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}
+.album-buttons button {
+    font-family: 'Metal Mania', cursive;
+    background-color: #000000;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.album-buttons button:hover {
+    background-color: #444;
+}
